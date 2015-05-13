@@ -9,9 +9,12 @@
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+    for(int i = 0; i < 12; i++) {
+        printf("Yo\n");
+        if(i == 3) {
+            continue;
+        }
     }
+    printf("Hi there");
     return 0;
 }
