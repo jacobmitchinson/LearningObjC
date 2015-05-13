@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#include <math.h>
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+    
+    double value = sin(1);
+    printf("%.3f", value);
     return 0;
 }
