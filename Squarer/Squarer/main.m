@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+int squarer(int num) {
+    int square = num * num;
+    return square;
+}
+
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+    printf("The square root of \"5\" is \"%d\"", squarer(5));
     return 0;
 }
