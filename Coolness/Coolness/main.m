@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+    int i = 0;
+    while (i < 11) {
+        printf("%d. Jake is cool\n", i);
+        i++;
     }
     return 0;
 }
