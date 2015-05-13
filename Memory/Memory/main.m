@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+    float *startOfBuffer;
+    startOfBuffer = malloc(1000 * sizeof(float));
+    
+    free(startOfBuffer);
+    
+    startOfBuffer = NULL;
     return 0;
 }
