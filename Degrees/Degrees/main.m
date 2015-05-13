@@ -7,11 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#include <stdio.h>
+
+float lastTemperature;
+
+float fahrenheitFromCelsius(float cel) {
+    lastTemperature = 1;
+    float fahr = cel * 1.8 + 32.0;
+    printf("%f  Celsius is %f Fahrenheit\n", cel, fahr);
+    return fahr;
+}
+
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+    float freezeInC = 0;
+    float freezeInF = fahrenheitFromCelsius(freezeInC);
+    printf("Water freezes at %f degrees Fahrenheit.\n", freezeInF);
     return 0;
 }
