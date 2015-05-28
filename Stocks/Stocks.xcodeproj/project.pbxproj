@@ -13,6 +13,7 @@
 		AE85FAC11B0D1283008F2B2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE85FAC01B0D1283008F2B2C /* Images.xcassets */; };
 		AE85FAC41B0D1283008F2B2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE85FAC21B0D1283008F2B2C /* Main.storyboard */; };
 		AE85FAD01B0D1283008F2B2C /* StocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE85FACF1B0D1283008F2B2C /* StocksTests.m */; };
+		AE85FADB1B0D12A4008F2B2C /* BNRStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = AE85FADA1B0D12A4008F2B2C /* BNRStockHolding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		AE85FAC91B0D1283008F2B2C /* StocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE85FACE1B0D1283008F2B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE85FACF1B0D1283008F2B2C /* StocksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StocksTests.m; sourceTree = "<group>"; };
+		AE85FAD91B0D12A4008F2B2C /* BNRStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStockHolding.h; sourceTree = "<group>"; };
+		AE85FADA1B0D12A4008F2B2C /* BNRStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStockHolding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				AE85FAC01B0D1283008F2B2C /* Images.xcassets */,
 				AE85FAC21B0D1283008F2B2C /* Main.storyboard */,
 				AE85FAB61B0D1283008F2B2C /* Supporting Files */,
+				AE85FAD91B0D12A4008F2B2C /* BNRStockHolding.h */,
+				AE85FADA1B0D12A4008F2B2C /* BNRStockHolding.m */,
 			);
 			path = Stocks;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				AE85FABF1B0D1283008F2B2C /* ViewController.m in Sources */,
 				AE85FABC1B0D1283008F2B2C /* main.m in Sources */,
 				AE85FABA1B0D1283008F2B2C /* AppDelegate.m in Sources */,
+				AE85FADB1B0D12A4008F2B2C /* BNRStockHolding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
