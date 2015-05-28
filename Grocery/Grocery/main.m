@@ -10,8 +10,17 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSMutableArray *list = [NSMutableArray array];
+        NSString *bread = @"Loaf of bread";
+        NSString *milk = @"Container of milk";
+        NSString *butter = @"Stick of butter";
+        [list addObject:bread];
+        [list addObject:milk];
+        [list addObject:butter];
+        NSLog(@"My grocery list is:");
+        for(NSString *item in list) {
+            NSLog(@"%@", item);
+        };
     }
     return 0;
 }
