@@ -10,8 +10,21 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSString *nameString = [NSString stringWithContentsOfFile:@"/usr/share/dict/propernames"
+                                                         encoding:NSUTF8StringEncoding
+                                                            error:NULL];
+        NSArray *names = [nameString componentsSeparatedByString:@"\n"];
+        
+        [NSCharacterSet lowercaseLetterCharacterSet];
+        
+        for(NSString *name in names) {
+            BOOL isLowerCase = [[NSCharacterSet uppercaseLetterCharacterSet] characterIsMember:[name  characterAtIndex:0]];
+//            NSRange r = [name rangeOfString:@"a"];
+//            // Was it found?
+            if (isLowerCase) {
+                NSLog(@"%@", name);
+            }
+        };
     }
     return 0;
 }
